@@ -23,7 +23,8 @@
   <section class="hero">
     <h1>Hello, I'm <span>Web Developer</span></h1>
     <p>I build modern and responsive websites</p>
-<a href="./cv.pdf" download class="cv-btn">Download CV</a>
+
+<a href="https://drive.google.com/file/d/10XqCI0UhuK2UtRAr6VgVpIBbBWFnu3L_/view?usp=sharing" download class="cv-btn" target="_blank">Download CV</a>
 
   </section>
 
@@ -58,6 +59,15 @@
     <h2>Contact Me</h2>
     <p>Email: example@gmail.com</p>
   </section>
+
+  <script>
+  document.getElementById("downloadBtn").addEventListener("click", function() {
+    const link = document.createElement("a");
+    link.href = "cv.pdf"; // path to your PDF
+    link.download = "SummerPlays_CV.pdf"; // name for download
+    link.click();
+  });
+</script>
 
   <script src="script.js"></script>
 </body>
